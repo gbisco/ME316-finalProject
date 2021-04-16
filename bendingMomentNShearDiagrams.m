@@ -17,7 +17,7 @@ L=170;
 x=linspace(0,170); 
 
 for i = 1:6
-V=R1(i)*(x>0)- Fr(i)*(x>D(i))- R2(i)*(x>170);
+V=R1(i)*(x>0)- Fr(i)*(x>D(i))+ R2(i)*(x>170);
 M=R1(i)*x- Fr(i)*(x-D(i)).*(x>D(i));
 subplot(211)
 plot(x,V);
